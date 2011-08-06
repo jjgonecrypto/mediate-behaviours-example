@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		  xmlns:s="library://ns.adobe.com/flex/spark" 
+		  xmlns:mx="library://ns.adobe.com/flex/mx" 
+		  xmlns:signals="org.osflash.signals.*"
+		  implements="org.justinjmoses.examples.mediate_behaviours.IServiceAware"
+		  width="100%" height="100%" horizontalAlign="center" verticalAlign="middle"> 
+	
+	<fx:Declarations>		
+		<signals:Signal id="startSignal" />
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			
+			import org.osflash.signals.ISignal;
+			
+			[Bindable]
+			private var actionUnderway:Boolean = false;
+			
+			public function serviceReturned():void
+			{
+				Alert.show("The service returned.","Guess what?");
+				actionUnderway = false;
+			}
+			
+			public function get start():ISignal
+			{
+				return startSignal;
+			}
+			
+		]]>
+	</fx:Script>
+			
+	<!-- Here we actually send the message to the mediator -->
+	<s:Button label="Start" click="start.dispatch(),actionUnderway=true" enabled="{!actionUnderway}" />
+</s:VGroup>
