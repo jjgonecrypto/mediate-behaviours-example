@@ -11,7 +11,7 @@ This example is an overview of using the Robotlegs Variance Utility to provide m
 * [As3-Signals v0.8](https://github.com/robertpenner/as3-signals)
 
 ##Usage instructions
-In Flashbuilder or IntelliJ, create a new 
+In Flashbuilder or IntelliJ, create a new project from the cloned source, and add the 3 SWC dependencies.
 
 ##Build instructions
 To build on your machine via Maven. Follow these steps:
@@ -19,8 +19,7 @@ To build on your machine via Maven. Follow these steps:
 1. Ensure Maven 3.0.3 + is installed
 
 2. Install local dependencies (add them to your local repository)
-
-	Commands:
+	
 		cd libs
 
 		mvn install:install-file 
@@ -46,8 +45,7 @@ To build on your machine via Maven. Follow these steps:
 
 3. Build
 
-Commands:
-	mvn clean install
+		mvn clean install
 	
 
 	
