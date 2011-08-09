@@ -2,7 +2,7 @@
 
 This example is an overview of using the Robotlegs Variance Utility to provide mediation against interfaces (behaviours), rather than concrete classes.
 
-(Check out the blog post)[...]
+(Check out the blog post)[http://justinjmoses.wordpress.com/2011/08/07/ui-mediation-sucks-mediate-behaviours-not-views/].
 
 
 ##Third party dependencies
