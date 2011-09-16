@@ -31,10 +31,6 @@
 					<compilerWarnings>
 	                	<warn-no-constructor>false</warn-no-constructor>
 					</compilerWarnings>
-					<themes>
-						<!-- FM4 workaround to ensure spark theme is properly loaded -->
-						<theme>${settings.localRepository}/com/adobe/flex/framework/spark/${flex.version}/spark-${flex.version}-theme.css</theme>
-					</themes>
                 </configuration>
 				<dependencies>
 					<dependency>
