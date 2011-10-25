@@ -63,7 +63,7 @@
 		<dependency>
 			<groupId>org.osflash</groupId>
 			<artifactId>as3-signals</artifactId>
-			<version>0.8</version>
+			<version>0.9-BETA</version>
 			<type>swc</type>
 		</dependency>
 		

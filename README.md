@@ -24,7 +24,7 @@ To build on your machine via Maven. Follow these steps:
 		
 	mvn install:install-file -Dfile=libs/robotlegs-utilities-variance-1.1.swc -DgroupId=org.robotlegs -DartifactId=robotlegs-utilities-variance -Dversion=1.1 -Dpackaging=swc
 		
-	mvn install:install-file -Dfile=libs/as3-signals-0.8.swc -DgroupId=org.osflash -DartifactId=as3-signals -Dversion=0.8 -Dpackaging=swc
+	mvn install:install-file -Dfile=libs/as3-signals-0.9-BETA.swc -DgroupId=org.osflash -DartifactId=as3-signals -Dversion=0.9-BETA -Dpackaging=swc
 
 3. Build
 
