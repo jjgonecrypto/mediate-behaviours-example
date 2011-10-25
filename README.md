@@ -6,8 +6,8 @@ This example is an overview of using the Robotlegs Variance Utility to provide m
 
 
 ##Third party dependencies
-* [Robotlegs v1.4.0](https://github.com/robotlegs/robotlegs-framework/)
-* [Robotlegs Variance Utility v1.0](https://github.com/dnalot/robotlegs-utilities-variance)
+* [Robotlegs v1.5.2](https://github.com/robotlegs/robotlegs-framework/)
+* [Robotlegs Variance Utility v1.1](https://github.com/dnalot/robotlegs-utilities-variance)
 * [As3-Signals v0.8](https://github.com/robertpenner/as3-signals)
 
 ##Usage instructions
@@ -20,28 +20,11 @@ To build on your machine via Maven. Follow these steps:
 
 2. Install local dependencies (add them to your local repository)
 	
-		cd libs
-
-		mvn install:install-file 
-			-Dfile=robotlegs-framework-1.4.0.swc 
-			-DgroupId=org.robotlegs 
-			-DartifactId=robotlegs-framework 
-			-Dversion=1.4.0
-			-Dpackaging=swc
+	mvn install:install-file -Dfile=libs/robotlegs-framework-1.5.2.swc -DgroupId=org.robotlegs -DartifactId=robotlegs-framework -Dversion=1.5.2 -Dpackaging=swc
 		
-		mvn install:install-file 
-			-Dfile=robotlegs-utilities-variance-1.0.swc 
-			-DgroupId=org.robotlegs 
-			-DartifactId=robotlegs-utilities-variance 
-			-Dversion=1.0 
-			-Dpackaging=swc
+	mvn install:install-file -Dfile=libs/robotlegs-utilities-variance-1.1.swc -DgroupId=org.robotlegs -DartifactId=robotlegs-utilities-variance -Dversion=1.1 -Dpackaging=swc
 		
-		mvn install:install-file 
-			-Dfile=as3-signals-0.8.swc 
-			-DgroupId=org.osflash
-			-DartifactId=as3-signals 
-			-Dversion=0.8 
-			-Dpackaging=swc
+	mvn install:install-file -Dfile=libs/as3-signals-0.8.swc -DgroupId=org.osflash -DartifactId=as3-signals -Dversion=0.8 -Dpackaging=swc
 
 3. Build
 
@@ -50,4 +33,3 @@ To build on your machine via Maven. Follow these steps:
 
 	
 
-	

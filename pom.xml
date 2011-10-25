@@ -22,7 +22,7 @@
 			<plugin>
 				<groupId>org.sonatype.flexmojos</groupId>
 				<artifactId>flexmojos-maven-plugin</artifactId>
-				<version>4.0-RC1</version>
+				<version>4.0-RC2</version>
                 <extensions>true</extensions>
        
 				<configuration>
@@ -51,15 +51,6 @@
 			<version>${flex.version}</version>
 			<type>pom</type>
 		</dependency>
-		
-		<dependency>
-		  <groupId>com.adobe.flex.framework</groupId>
-		  <artifactId>spark</artifactId>
-		  <version>${flex.version}</version>
-		  <classifier>theme</classifier>
-		  <type>css</type>
-		  <scope>theme</scope>
-		</dependency>
 	
 		<dependency>
 		  <groupId>com.adobe.flexunit</groupId>
@@ -69,7 +60,6 @@
 		  <scope>test</scope>
 		</dependency>
 		
-		<!-- UPDATED -->
 		<dependency>
 			<groupId>org.osflash</groupId>
 			<artifactId>as3-signals</artifactId>
