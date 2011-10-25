@@ -1,12 +1,3 @@
+.*
 
-.DS_Store
-
-target/classes/fonts.ser
-
-target/mediate-behaviours-example-1.0-SNAPSHOT-link-report.xml
-
-target/mediate-behaviours-example-1.0-SNAPSHOT-configs.xml
-
-target/mediate-behaviours-example-1.0-SNAPSHOT.swf
-
-target/mediate-behaviours-example-1.0-SNAPSHOT-size-report.xml
+target
