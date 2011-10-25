@@ -7,15 +7,15 @@
 		<![CDATA[
 			import mx.events.FlexEvent;
 			
-			import org.justinjmoses.examples.mediate_behaviours.Context;
+			import org.justinjmoses.examples.mediate_behaviours.MyContext;
 			
-			private var context:Context;
+			private var context:MyContext;
 			
 			protected function onPreInit(event:FlexEvent):void
 			{
 				//pass in the system manager so we can listen for ADDED TO STAGE 
 				//events from popups as well
-				context = new Context(systemManager as DisplayObjectContainer);	
+				context = new MyContext(systemManager as DisplayObjectContainer);	
 			}
 
 			protected function onCrtComplete(event:FlexEvent):void

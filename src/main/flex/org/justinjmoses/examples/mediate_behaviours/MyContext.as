@@ -9,9 +9,9 @@ package org.justinjmoses.examples.mediate_behaviours
 	import org.robotlegs.utilities.variance.base.IVariantMediatorMap;
 	import org.robotlegs.utilities.variance.base.RLVariantMediatorMap;
 	
-	public class Context extends org.robotlegs.mvcs.Context
+	public class MyContext extends Context
 	{
-		public function Context(contextView:DisplayObjectContainer = null, autoStartup:Boolean = true)
+		public function MyContext(contextView:DisplayObjectContainer = null, autoStartup:Boolean = true)
 		{
 			super(contextView, autoStartup);
 		}
