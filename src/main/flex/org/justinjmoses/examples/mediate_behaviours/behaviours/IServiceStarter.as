@@ -1,8 +1,8 @@
-package org.justinjmoses.examples.mediate_behaviours
+package org.justinjmoses.examples.mediate_behaviours.behaviours
 {
 	import org.osflash.signals.ISignal;
 
-	public interface IServiceAware
+	public interface IServiceStarter
 	{
 		function serviceReturned():void;
 		function get start():ISignal;	

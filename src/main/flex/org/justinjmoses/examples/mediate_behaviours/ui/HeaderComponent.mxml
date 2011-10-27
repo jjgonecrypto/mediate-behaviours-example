@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:SkinnableContainer xmlns:fx="http://ns.adobe.com/mxml/2009"
+		  xmlns:s="library://ns.adobe.com/flex/spark" 
+		  xmlns:mx="library://ns.adobe.com/flex/mx"
+		  implements="org.justinjmoses.examples.mediate_behaviours.behaviours.IServiceAware"
+		  backgroundColor="#EEEEEE">
+
+	<fx:Script>
+		<![CDATA[
+			
+			public function set actionUnderway(value:Boolean):void
+			{
+				currentState = value ? 'processing' : 'normal';
+			}
+			
+		]]>
+	</fx:Script>
+	<s:layout>
+		<s:HorizontalLayout paddingTop="10" paddingBottom="10" horizontalAlign="center" />
+	</s:layout>
+
+	<s:states>
+		<s:State name="normal" />
+		<s:State name="processing" />
+	</s:states>
+
+	<s:Label text="Status: " />
+	<s:Label text.normal="free" text.processing="busy" color.normal="0x888888" color.processing="0xff0000" />
+		
+</s:SkinnableContainer>	

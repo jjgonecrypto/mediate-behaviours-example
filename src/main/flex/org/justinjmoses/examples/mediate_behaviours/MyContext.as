@@ -2,6 +2,11 @@ package org.justinjmoses.examples.mediate_behaviours
 {
 	import flash.display.DisplayObjectContainer;
 	
+	import org.justinjmoses.examples.mediate_behaviours.behaviours.IServiceAware;
+	import org.justinjmoses.examples.mediate_behaviours.behaviours.IServiceStarter;
+	import org.justinjmoses.examples.mediate_behaviours.mediators.ServiceAwareMediator;
+	import org.justinjmoses.examples.mediate_behaviours.mediators.ServiceStarterMediator;
+	import org.justinjmoses.examples.mediate_behaviours.models.ServiceProcessingModel;
 	import org.justinjmoses.examples.mediate_behaviours.services.AsyncService;
 	import org.justinjmoses.examples.mediate_behaviours.services.IAsyncService;
 	import org.robotlegs.core.IMediatorMap;
@@ -29,7 +34,9 @@ package org.justinjmoses.examples.mediate_behaviours
 		override public function startup():void
 		{
 			injector.mapSingletonOf(IAsyncService, AsyncService);
+			injector.mapSingleton(ServiceProcessingModel);
 			
+			variantMap.mapMediator(IServiceStarter, ServiceStarterMediator);
 			variantMap.mapMediator(IServiceAware, ServiceAwareMediator);
 		}
 
