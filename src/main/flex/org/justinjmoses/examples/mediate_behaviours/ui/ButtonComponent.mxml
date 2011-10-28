@@ -12,11 +12,13 @@
 	
 	<fx:Script>
 		<![CDATA[
+			import mx.controls.Alert;
+			
 			import org.osflash.signals.ISignal;
 			
 			public function serviceReturned():void
 			{
-				//Alert.show("The service returned.","Guess what?");
+				Alert.show("The service returned.","Guess what?");
 			}
 			
 			public function set actionUnderway(value:Boolean):void
